@@ -33,7 +33,7 @@
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.board_picture_box = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
@@ -44,7 +44,14 @@
             this.gunaPictureBox6 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.rollDice = new Guna.UI.WinForms.GunaAdvenceButton();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            this.sb_label = new Guna.UI.WinForms.GunaLabel();
+            this.boardComboBox = new Guna.UI.WinForms.GunaComboBox();
+            this.DadoL = new Guna.UI.WinForms.GunaLabel();
+            this.Score1 = new Guna.UI.WinForms.GunaLabel();
+            this.Score2 = new Guna.UI.WinForms.GunaLabel();
+            this.Score3 = new Guna.UI.WinForms.GunaLabel();
+            this.Score4 = new Guna.UI.WinForms.GunaLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.board_picture_box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).BeginInit();
@@ -89,16 +96,16 @@
             this.gunaControlBox2.Size = new System.Drawing.Size(45, 29);
             this.gunaControlBox2.TabIndex = 2;
             // 
-            // gunaPictureBox1
+            // board_picture_box
             // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(446, 53);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(807, 572);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox1.TabIndex = 3;
-            this.gunaPictureBox1.TabStop = false;
+            this.board_picture_box.BaseColor = System.Drawing.Color.White;
+            this.board_picture_box.Image = ((System.Drawing.Image)(resources.GetObject("board_picture_box.Image")));
+            this.board_picture_box.Location = new System.Drawing.Point(446, 53);
+            this.board_picture_box.Name = "board_picture_box";
+            this.board_picture_box.Size = new System.Drawing.Size(807, 572);
+            this.board_picture_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.board_picture_box.TabIndex = 3;
+            this.board_picture_box.TabStop = false;
             // 
             // gunaPictureBox2
             // 
@@ -234,6 +241,94 @@
             this.rollDice.Size = new System.Drawing.Size(153, 42);
             this.rollDice.TabIndex = 17;
             this.rollDice.Text = "Lanzar Dado";
+            this.rollDice.Click += new System.EventHandler(this.rollDice_Click);
+            // 
+            // sb_label
+            // 
+            this.sb_label.AutoSize = true;
+            this.sb_label.BackColor = System.Drawing.Color.Transparent;
+            this.sb_label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.sb_label.Location = new System.Drawing.Point(23, 605);
+            this.sb_label.Name = "sb_label";
+            this.sb_label.Size = new System.Drawing.Size(152, 20);
+            this.sb_label.TabIndex = 18;
+            this.sb_label.Text = "Seleccione un tablero";
+            this.sb_label.Visible = false;
+            // 
+            // boardComboBox
+            // 
+            this.boardComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.boardComboBox.BaseColor = System.Drawing.Color.White;
+            this.boardComboBox.BorderColor = System.Drawing.Color.Silver;
+            this.boardComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.boardComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.boardComboBox.Enabled = false;
+            this.boardComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.boardComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.boardComboBox.ForeColor = System.Drawing.Color.Black;
+            this.boardComboBox.FormattingEnabled = true;
+            this.boardComboBox.Location = new System.Drawing.Point(181, 600);
+            this.boardComboBox.Name = "boardComboBox";
+            this.boardComboBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(160)))), ((int)(((byte)(166)))));
+            this.boardComboBox.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.boardComboBox.Size = new System.Drawing.Size(145, 31);
+            this.boardComboBox.TabIndex = 19;
+            this.boardComboBox.Visible = false;
+            this.boardComboBox.SelectedIndexChanged += new System.EventHandler(this.boardComboBox_SelectedIndexChanged);
+            // 
+            // DadoL
+            // 
+            this.DadoL.AutoSize = true;
+            this.DadoL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DadoL.Location = new System.Drawing.Point(265, 483);
+            this.DadoL.Name = "DadoL";
+            this.DadoL.Size = new System.Drawing.Size(17, 20);
+            this.DadoL.TabIndex = 20;
+            this.DadoL.Text = "0";
+            // 
+            // Score1
+            // 
+            this.Score1.AutoSize = true;
+            this.Score1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Score1.Location = new System.Drawing.Point(97, 85);
+            this.Score1.Name = "Score1";
+            this.Score1.Size = new System.Drawing.Size(17, 20);
+            this.Score1.TabIndex = 21;
+            this.Score1.Text = "0";
+            this.Score1.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAliasGridFit;
+            // 
+            // Score2
+            // 
+            this.Score2.AutoSize = true;
+            this.Score2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Score2.Location = new System.Drawing.Point(277, 85);
+            this.Score2.Name = "Score2";
+            this.Score2.Size = new System.Drawing.Size(17, 20);
+            this.Score2.TabIndex = 22;
+            this.Score2.Text = "0";
+            this.Score2.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAliasGridFit;
+            // 
+            // Score3
+            // 
+            this.Score3.AutoSize = true;
+            this.Score3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Score3.Location = new System.Drawing.Point(97, 246);
+            this.Score3.Name = "Score3";
+            this.Score3.Size = new System.Drawing.Size(17, 20);
+            this.Score3.TabIndex = 23;
+            this.Score3.Text = "0";
+            this.Score3.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAliasGridFit;
+            // 
+            // Score4
+            // 
+            this.Score4.AutoSize = true;
+            this.Score4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Score4.Location = new System.Drawing.Point(277, 246);
+            this.Score4.Name = "Score4";
+            this.Score4.Size = new System.Drawing.Size(17, 20);
+            this.Score4.TabIndex = 24;
+            this.Score4.Text = "0";
+            this.Score4.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAliasGridFit;
             // 
             // Game
             // 
@@ -243,6 +338,13 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1303, 688);
+            this.Controls.Add(this.Score4);
+            this.Controls.Add(this.Score3);
+            this.Controls.Add(this.Score2);
+            this.Controls.Add(this.Score1);
+            this.Controls.Add(this.DadoL);
+            this.Controls.Add(this.boardComboBox);
+            this.Controls.Add(this.sb_label);
             this.Controls.Add(this.rollDice);
             this.Controls.Add(this.gunaPictureBox6);
             this.Controls.Add(this.gunaLabel4);
@@ -253,7 +355,7 @@
             this.Controls.Add(this.gunaPictureBox3);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.gunaPictureBox2);
-            this.Controls.Add(this.gunaPictureBox1);
+            this.Controls.Add(this.board_picture_box);
             this.Controls.Add(this.gunaControlBox2);
             this.Controls.Add(this.gunaControlBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -261,7 +363,7 @@
             this.Name = "Game";
             this.Text = "Snakes & Ladders";
             this.Load += new System.EventHandler(this.Game_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.board_picture_box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).EndInit();
@@ -277,7 +379,7 @@
         private Guna.UI.WinForms.GunaDragControl gunaDragControl1;
         private Guna.UI.WinForms.GunaControlBox gunaControlBox1;
         private Guna.UI.WinForms.GunaControlBox gunaControlBox2;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private Guna.UI.WinForms.GunaPictureBox board_picture_box;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox4;
@@ -288,5 +390,12 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox5;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel sb_label;
+        private Guna.UI.WinForms.GunaComboBox boardComboBox;
+        private Guna.UI.WinForms.GunaLabel DadoL;
+        private Guna.UI.WinForms.GunaLabel Score1;
+        private Guna.UI.WinForms.GunaLabel Score4;
+        private Guna.UI.WinForms.GunaLabel Score3;
+        private Guna.UI.WinForms.GunaLabel Score2;
     }
 }
