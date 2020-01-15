@@ -2,8 +2,10 @@ C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\Snakes-Ladders-RS232\bin\De
 C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\Snakes-Ladders-RS232\bin\Debug\Snakes-Ladders-RS232.exe
 C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\Snakes-Ladders-RS232\bin\Debug\Snakes-Ladders-RS232.pdb
 C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\Snakes-Ladders-RS232\obj\Debug\Snakes-Ladders-RS232.csprojAssemblyReference.cache
-C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\Snakes-Ladders-RS232\obj\Debug\Snakes_Ladders_RS232.Form1.resources
 C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\Snakes-Ladders-RS232\obj\Debug\Snakes_Ladders_RS232.Properties.Resources.resources
 C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\Snakes-Ladders-RS232\obj\Debug\Snakes-Ladders-RS232.csproj.GenerateResource.cache
 C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\Snakes-Ladders-RS232\obj\Debug\Snakes-Ladders-RS232.exe
 C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\Snakes-Ladders-RS232\obj\Debug\Snakes-Ladders-RS232.pdb
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\Snakes-Ladders-RS232\bin\Debug\Guna.UI.dll
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\Snakes-Ladders-RS232\obj\Debug\Snakes-Ladders-RS232.csproj.CopyComplete
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\Snakes-Ladders-RS232\obj\Debug\Snakes_Ladders_RS232.StartMenu.resources

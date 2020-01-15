@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Snakes_Ladders_RS232
 {
-    public partial class Form1 : Form
+    public partial class StartMenu : Form
     {
-        public Form1()
+        public StartMenu()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lookupPorts_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
