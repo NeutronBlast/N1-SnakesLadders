@@ -39,6 +39,11 @@
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
             this.portsComboBox = new Guna.UI.WinForms.GunaComboBox();
+            this.player1_Button = new Guna.UI.WinForms.GunaCircleButton();
+            this.player2_Button = new Guna.UI.WinForms.GunaCircleButton();
+            this.player3_Button = new Guna.UI.WinForms.GunaCircleButton();
+            this.player4_Button = new Guna.UI.WinForms.GunaCircleButton();
+            this.selectPlayer_Label = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -124,6 +129,7 @@
             this.startGame.CheckedImage = ((System.Drawing.Image)(resources.GetObject("startGame.CheckedImage")));
             this.startGame.CheckedLineColor = System.Drawing.Color.DimGray;
             this.startGame.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.startGame.Enabled = false;
             this.startGame.FocusedColor = System.Drawing.Color.Empty;
             this.startGame.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.startGame.ForeColor = System.Drawing.Color.White;
@@ -142,6 +148,7 @@
             this.startGame.TabIndex = 4;
             this.startGame.Text = "Empezar partida";
             this.startGame.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.startGame.Click += new System.EventHandler(this.startGame_Click);
             // 
             // quitGame
             // 
@@ -161,7 +168,7 @@
             this.quitGame.Image = ((System.Drawing.Image)(resources.GetObject("quitGame.Image")));
             this.quitGame.ImageSize = new System.Drawing.Size(20, 20);
             this.quitGame.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.quitGame.Location = new System.Drawing.Point(830, 430);
+            this.quitGame.Location = new System.Drawing.Point(830, 500);
             this.quitGame.Name = "quitGame";
             this.quitGame.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(131)))), ((int)(((byte)(135)))));
             this.quitGame.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -173,6 +180,7 @@
             this.quitGame.TabIndex = 5;
             this.quitGame.Text = "Salir del Juego";
             this.quitGame.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.quitGame.Click += new System.EventHandler(this.quitGame_Click);
             // 
             // gunaPictureBox2
             // 
@@ -213,6 +221,123 @@
             this.portsComboBox.OnHoverItemForeColor = System.Drawing.Color.White;
             this.portsComboBox.Size = new System.Drawing.Size(295, 31);
             this.portsComboBox.TabIndex = 9;
+            this.portsComboBox.SelectedIndexChanged += new System.EventHandler(this.portsComboBox_SelectedIndexChanged);
+            // 
+            // player1_Button
+            // 
+            this.player1_Button.AnimationHoverSpeed = 0.07F;
+            this.player1_Button.AnimationSpeed = 0.03F;
+            this.player1_Button.BackColor = System.Drawing.Color.Transparent;
+            this.player1_Button.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(160)))), ((int)(((byte)(166)))));
+            this.player1_Button.BorderColor = System.Drawing.Color.Black;
+            this.player1_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.player1_Button.Enabled = false;
+            this.player1_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.player1_Button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.player1_Button.ForeColor = System.Drawing.Color.White;
+            this.player1_Button.Image = null;
+            this.player1_Button.ImageSize = new System.Drawing.Size(52, 52);
+            this.player1_Button.Location = new System.Drawing.Point(830, 422);
+            this.player1_Button.Name = "player1_Button";
+            this.player1_Button.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(131)))), ((int)(((byte)(135)))));
+            this.player1_Button.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.player1_Button.OnHoverForeColor = System.Drawing.Color.White;
+            this.player1_Button.OnHoverImage = null;
+            this.player1_Button.OnPressedColor = System.Drawing.Color.Black;
+            this.player1_Button.Size = new System.Drawing.Size(65, 62);
+            this.player1_Button.TabIndex = 10;
+            this.player1_Button.Text = "1";
+            this.player1_Button.Click += new System.EventHandler(this.player1_Button_Click);
+            // 
+            // player2_Button
+            // 
+            this.player2_Button.AnimationHoverSpeed = 0.07F;
+            this.player2_Button.AnimationSpeed = 0.03F;
+            this.player2_Button.BackColor = System.Drawing.Color.Transparent;
+            this.player2_Button.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(160)))), ((int)(((byte)(166)))));
+            this.player2_Button.BorderColor = System.Drawing.Color.Black;
+            this.player2_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.player2_Button.Enabled = false;
+            this.player2_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.player2_Button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.player2_Button.ForeColor = System.Drawing.Color.White;
+            this.player2_Button.Image = null;
+            this.player2_Button.ImageSize = new System.Drawing.Size(52, 52);
+            this.player2_Button.Location = new System.Drawing.Point(901, 422);
+            this.player2_Button.Name = "player2_Button";
+            this.player2_Button.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(131)))), ((int)(((byte)(135)))));
+            this.player2_Button.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.player2_Button.OnHoverForeColor = System.Drawing.Color.White;
+            this.player2_Button.OnHoverImage = null;
+            this.player2_Button.OnPressedColor = System.Drawing.Color.Black;
+            this.player2_Button.Size = new System.Drawing.Size(65, 62);
+            this.player2_Button.TabIndex = 11;
+            this.player2_Button.Text = "2";
+            this.player2_Button.Click += new System.EventHandler(this.player2_Button_Click);
+            // 
+            // player3_Button
+            // 
+            this.player3_Button.AnimationHoverSpeed = 0.07F;
+            this.player3_Button.AnimationSpeed = 0.03F;
+            this.player3_Button.BackColor = System.Drawing.Color.Transparent;
+            this.player3_Button.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(160)))), ((int)(((byte)(166)))));
+            this.player3_Button.BorderColor = System.Drawing.Color.Black;
+            this.player3_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.player3_Button.Enabled = false;
+            this.player3_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.player3_Button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.player3_Button.ForeColor = System.Drawing.Color.White;
+            this.player3_Button.Image = null;
+            this.player3_Button.ImageSize = new System.Drawing.Size(52, 52);
+            this.player3_Button.Location = new System.Drawing.Point(972, 422);
+            this.player3_Button.Name = "player3_Button";
+            this.player3_Button.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(131)))), ((int)(((byte)(135)))));
+            this.player3_Button.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.player3_Button.OnHoverForeColor = System.Drawing.Color.White;
+            this.player3_Button.OnHoverImage = null;
+            this.player3_Button.OnPressedColor = System.Drawing.Color.Black;
+            this.player3_Button.Size = new System.Drawing.Size(65, 62);
+            this.player3_Button.TabIndex = 12;
+            this.player3_Button.Text = "3";
+            this.player3_Button.Click += new System.EventHandler(this.player3_Button_Click);
+            // 
+            // player4_Button
+            // 
+            this.player4_Button.AnimationHoverSpeed = 0.07F;
+            this.player4_Button.AnimationSpeed = 0.03F;
+            this.player4_Button.BackColor = System.Drawing.Color.Transparent;
+            this.player4_Button.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(160)))), ((int)(((byte)(166)))));
+            this.player4_Button.BorderColor = System.Drawing.Color.Black;
+            this.player4_Button.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.player4_Button.Enabled = false;
+            this.player4_Button.FocusedColor = System.Drawing.Color.Empty;
+            this.player4_Button.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.player4_Button.ForeColor = System.Drawing.Color.White;
+            this.player4_Button.Image = null;
+            this.player4_Button.ImageSize = new System.Drawing.Size(52, 52);
+            this.player4_Button.Location = new System.Drawing.Point(1043, 422);
+            this.player4_Button.Name = "player4_Button";
+            this.player4_Button.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(131)))), ((int)(((byte)(135)))));
+            this.player4_Button.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.player4_Button.OnHoverForeColor = System.Drawing.Color.White;
+            this.player4_Button.OnHoverImage = null;
+            this.player4_Button.OnPressedColor = System.Drawing.Color.Black;
+            this.player4_Button.Size = new System.Drawing.Size(65, 62);
+            this.player4_Button.TabIndex = 13;
+            this.player4_Button.Text = "4";
+            this.player4_Button.Click += new System.EventHandler(this.player4_Button_Click);
+            // 
+            // selectPlayer_Label
+            // 
+            this.selectPlayer_Label.AutoSize = true;
+            this.selectPlayer_Label.BackColor = System.Drawing.Color.Transparent;
+            this.selectPlayer_Label.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.selectPlayer_Label.Location = new System.Drawing.Point(830, 398);
+            this.selectPlayer_Label.Name = "selectPlayer_Label";
+            this.selectPlayer_Label.Size = new System.Drawing.Size(136, 20);
+            this.selectPlayer_Label.TabIndex = 14;
+            this.selectPlayer_Label.Text = "Seleccione jugador";
+            this.selectPlayer_Label.Visible = false;
             // 
             // StartMenu
             // 
@@ -222,6 +347,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1303, 688);
+            this.Controls.Add(this.selectPlayer_Label);
+            this.Controls.Add(this.player4_Button);
+            this.Controls.Add(this.player3_Button);
+            this.Controls.Add(this.player2_Button);
+            this.Controls.Add(this.player1_Button);
             this.Controls.Add(this.portsComboBox);
             this.Controls.Add(this.gunaPictureBox3);
             this.Controls.Add(this.gunaPictureBox2);
@@ -236,10 +366,11 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "StartMenu";
             this.Text = "Snakes & Ladders";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.StartMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -254,6 +385,11 @@
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox3;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
         private Guna.UI.WinForms.GunaComboBox portsComboBox;
+        private Guna.UI.WinForms.GunaCircleButton player1_Button;
+        private Guna.UI.WinForms.GunaCircleButton player4_Button;
+        private Guna.UI.WinForms.GunaCircleButton player3_Button;
+        private Guna.UI.WinForms.GunaCircleButton player2_Button;
+        private Guna.UI.WinForms.GunaLabel selectPlayer_Label;
     }
 }
 
