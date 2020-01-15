@@ -72,6 +72,8 @@ namespace Snakes_Ladders_RS232
         private void Game_Load(object sender, EventArgs e)
         {
             connector.USID = JugadorBit(this.ID);
+            //System.Diagnostics.Trace.Write("id = ");
+            //System.Diagnostics.Trace.WriteLine(this.ID);
         }
 
         private void boardComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -93,9 +95,9 @@ namespace Snakes_Ladders_RS232
         {
             this.rollDice.Enabled = false;
             int d = LanzarDado();
-            
-                if (this.cont == 3)
-                {
+
+            //if (this.cont == 3)
+                //{
                     if (d == 6)
                     {
                         this.cont = 0;
@@ -103,13 +105,19 @@ namespace Snakes_Ladders_RS232
                         EnviarMovimiento(d);
                     }
                     else
+                    {
+                        this.cont = 0;
+                        Moverse(d, this.ID);
+                        EnviarMovimiento(d);
                         EnviarTurno();
-                }
-                else
+                    }
+
+                //}
+                /*else
                 {
                     Moverse(d, this.ID);
                     EnviarMovimiento(d);
-                }
+                }*/
 
             
         }
@@ -314,6 +322,9 @@ namespace Snakes_Ladders_RS232
                         return 3;
                     break;
             }
+            System.Diagnostics.Trace.Write("id = ");
+            System.Diagnostics.Trace.WriteLine(this.ID);
+
             return 0;
         }
 
@@ -361,6 +372,7 @@ namespace Snakes_Ladders_RS232
 
         private void ShowData(object sender, EventArgs e)
         {
+            System.Diagnostics.Trace.Write("yo hello receiving data here");
             connector.Control(TramaIn);
             if (TramaIn.Length >= 16)
             {
@@ -442,6 +454,7 @@ namespace Snakes_Ladders_RS232
 
         private void EnviarMovimiento(int d)
         {
+            //System.Diagnostics.Trace.WriteLine("send move");
             String player = JugadorBit(this.ID);
             TramaOut = String.Concat(player, player, "001", DadoBit(d), 0, "00000");
             serialPort1.WriteLine(TramaOut);
@@ -449,6 +462,7 @@ namespace Snakes_Ladders_RS232
 
         private void EnviarTurno()
         {
+            System.Diagnostics.Trace.WriteLine("Enviar turno");
             TramaOut = String.Concat(JugadorBit(this.ID), JugadorBit(NextPlayer()), "011", "000", 0, "00000");
             serialPort1.WriteLine(TramaOut);
         }

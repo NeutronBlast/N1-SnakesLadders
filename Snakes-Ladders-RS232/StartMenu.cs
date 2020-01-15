@@ -105,7 +105,7 @@ namespace Snakes_Ladders_RS232
         }
         private void ThreadStart()
         {
-            //System.Diagnostics.Trace.WriteLine("whatever");
+            System.Diagnostics.Trace.WriteLine("whatever");
             Form game = new Game(this.id, this.puerto);
             Application.Run(game); // <-- other form started on its own UI thread
         }
