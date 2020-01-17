@@ -75,10 +75,45 @@ namespace Escalera.Forms
 
         private int LanzarDado()
         {
+            string path = Application.StartupPath + "\\Assets\\";
             Random i = new Random();
             int n = i.Next(1, 7);
             if (n == 7) n = 6;
             this.DadoL.Text = String.Concat(n);
+
+            switch (n)
+            {
+                case 1:
+                    {
+                        this.dice_Pic.Image = Image.FromFile(path + "Side1.png");
+                        break;
+                    }
+                case 2:
+                    {
+                        this.dice_Pic.Image = Image.FromFile(path + "Side2.png");
+                        break;
+                    }
+                case 3:
+                    {
+                        this.dice_Pic.Image = Image.FromFile(path + "Side3.png");
+                        break;
+                    }
+                case 4:
+                    {
+                        this.dice_Pic.Image = Image.FromFile(path + "Side4.png");
+                        break;
+                    }
+                case 5:
+                    {
+                        this.dice_Pic.Image = Image.FromFile(path + "Side5.png");
+                        break;
+                    }
+                case 6:
+                    {
+                        this.dice_Pic.Image = Image.FromFile(path + "Side6.png");
+                        break;
+                    }
+            }
             return n;
         }
 

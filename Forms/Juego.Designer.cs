@@ -50,13 +50,13 @@
             this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPictureBox4 = new Guna.UI.WinForms.GunaPictureBox();
             this.Dado = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaPictureBox5 = new Guna.UI.WinForms.GunaPictureBox();
+            this.dice_Pic = new Guna.UI.WinForms.GunaPictureBox();
             this.Tablero = new Guna.UI.WinForms.GunaPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dice_Pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tablero)).BeginInit();
             this.SuspendLayout();
             // 
@@ -309,17 +309,17 @@
             this.Dado.Text = "Lanzar Dado";
             this.Dado.Click += new System.EventHandler(this.Dado_Click_1);
             // 
-            // gunaPictureBox5
+            // dice_Pic
             // 
-            this.gunaPictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox5.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox5.Image")));
-            this.gunaPictureBox5.Location = new System.Drawing.Point(128, 409);
-            this.gunaPictureBox5.Name = "gunaPictureBox5";
-            this.gunaPictureBox5.Size = new System.Drawing.Size(120, 120);
-            this.gunaPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox5.TabIndex = 19;
-            this.gunaPictureBox5.TabStop = false;
+            this.dice_Pic.BackColor = System.Drawing.Color.Transparent;
+            this.dice_Pic.BaseColor = System.Drawing.Color.White;
+            this.dice_Pic.Image = ((System.Drawing.Image)(resources.GetObject("dice_Pic.Image")));
+            this.dice_Pic.Location = new System.Drawing.Point(128, 409);
+            this.dice_Pic.Name = "dice_Pic";
+            this.dice_Pic.Size = new System.Drawing.Size(120, 120);
+            this.dice_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dice_Pic.TabIndex = 19;
+            this.dice_Pic.TabStop = false;
             // 
             // Tablero
             // 
@@ -341,7 +341,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1303, 688);
             this.Controls.Add(this.Tablero);
-            this.Controls.Add(this.gunaPictureBox5);
+            this.Controls.Add(this.dice_Pic);
             this.Controls.Add(this.Dado);
             this.Controls.Add(this.gunaPictureBox4);
             this.Controls.Add(this.gunaPictureBox3);
@@ -369,7 +369,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dice_Pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tablero)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -398,7 +398,7 @@
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaAdvenceButton Dado;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox5;
+        private Guna.UI.WinForms.GunaPictureBox dice_Pic;
         private Guna.UI.WinForms.GunaPictureBox Tablero;
     }
 }
