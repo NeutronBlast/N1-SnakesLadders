@@ -371,9 +371,9 @@
             this.difficulty_label.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.difficulty_label.Location = new System.Drawing.Point(819, 495);
             this.difficulty_label.Name = "difficulty_label";
-            this.difficulty_label.Size = new System.Drawing.Size(147, 20);
+            this.difficulty_label.Size = new System.Drawing.Size(55, 20);
             this.difficulty_label.TabIndex = 23;
-            this.difficulty_label.Text = "Seleccione dificultad";
+            this.difficulty_label.Text = "Prueba";
             this.difficulty_label.Visible = false;
             // 
             // quit_Game
