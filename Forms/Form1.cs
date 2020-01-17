@@ -129,7 +129,7 @@ namespace Escalera
             difficulty_label.Visible = true;
 
             DificultadList.Items.Clear();
-            string[] lista = { "PruebaUno", "PruebaDos" };
+            string[] lista = { "Normal", "Ajustado" };
             DificultadList.Items.AddRange(lista);
             DificultadList.Enabled = true;
             DificultadList.Visible = true;
@@ -171,7 +171,7 @@ namespace Escalera
 
         private void DificultadList_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            if (DificultadList.Text == "PruebaUno")
+            if (DificultadList.Text == "Normal")
                 dificultad = 0;
             else
                 dificultad = 1;

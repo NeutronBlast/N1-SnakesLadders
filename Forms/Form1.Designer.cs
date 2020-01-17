@@ -191,7 +191,7 @@
             this.bJugar.OnPressedColor = System.Drawing.Color.Black;
             this.bJugar.Size = new System.Drawing.Size(295, 70);
             this.bJugar.TabIndex = 15;
-            this.bJugar.Text = "Iniciar como Jugador";
+            this.bJugar.Text = "Unirse a una partida";
             this.bJugar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.bJugar.Click += new System.EventHandler(this.bJugar_Click_1);
             // 
@@ -226,6 +226,7 @@
             this.bObservar.TabIndex = 16;
             this.bObservar.Text = "Iniciar como Espectador";
             this.bObservar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bObservar.Visible = false;
             this.bObservar.Click += new System.EventHandler(this.bObservar_Click_1);
             // 
             // bJugador1
@@ -371,9 +372,9 @@
             this.difficulty_label.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.difficulty_label.Location = new System.Drawing.Point(819, 495);
             this.difficulty_label.Name = "difficulty_label";
-            this.difficulty_label.Size = new System.Drawing.Size(55, 20);
+            this.difficulty_label.Size = new System.Drawing.Size(112, 20);
             this.difficulty_label.TabIndex = 23;
-            this.difficulty_label.Text = "Prueba";
+            this.difficulty_label.Text = "Modo de juego";
             this.difficulty_label.Visible = false;
             // 
             // quit_Game
