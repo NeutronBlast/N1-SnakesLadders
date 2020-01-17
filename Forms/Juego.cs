@@ -434,7 +434,7 @@ namespace Escalera.Forms
 
         private void Dado_Click_1(object sender, EventArgs e)
         {
-            this.Dado.Enabled = false;
+            //this.Dado.Enabled = false;
             int d = LanzarDado();
 
             if (this.tablero_type == 0)

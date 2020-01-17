@@ -21,3 +21,15 @@ C:\Users\Hyper\Downloads\Escalera\Escalera\obj\Debug\Escalera.Forms.Juego.resour
 C:\Users\Hyper\Downloads\Escalera\Escalera\obj\Debug\Escalera.Properties.Resources.resources
 C:\Users\Hyper\Downloads\Escalera\Escalera\obj\Debug\Escalera.csproj.GenerateResource.cache
 C:\Users\Hyper\Downloads\Escalera\Escalera\obj\Debug\Escalera.csproj.CopyComplete
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\bin\Debug\Escalera.exe.config
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\bin\Debug\Escalera.exe
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\bin\Debug\Escalera.pdb
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\bin\Debug\Guna.UI.dll
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\obj\Debug\Escalera.csprojAssemblyReference.cache
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\obj\Debug\Escalera.Form1.resources
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\obj\Debug\Escalera.Forms.Juego.resources
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\obj\Debug\Escalera.Properties.Resources.resources
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\obj\Debug\Escalera.csproj.GenerateResource.cache
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\obj\Debug\Escalera.csproj.CopyComplete
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\obj\Debug\Escalera.exe
+C:\Users\Hyper\Documents\GitHub\Snakes-Ladders-RS232\obj\Debug\Escalera.pdb
