@@ -41,7 +41,16 @@ namespace Escalera.Forms
             {
                 this.Mensaje.Text = "Selecciona un tablero";
                 this.Mensaje.Visible = true;
-                this.Dado.Enabled = true;
+                boardLabel.Visible = true;
+                int[] boards = { 1, 2, 3, 4, 5, 6 };
+                boardComboBox.Items.Add(1);
+                boardComboBox.Items.Add(2);
+                boardComboBox.Items.Add(3);
+                boardComboBox.Items.Add(4);
+                boardComboBox.Items.Add(5);
+                boardComboBox.Items.Add(6);
+                boardComboBox.Visible = true;
+
             }
 
             try
@@ -474,9 +483,7 @@ namespace Escalera.Forms
 
             if (this.tablero_type == 0)
             {
-
-                DecidirTablero(d);
-                EnviarTablero(d);
+                //Ignore
             }
             else
             {
@@ -499,6 +506,15 @@ namespace Escalera.Forms
 
             }
 
+        }
+
+        private void boardComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DecidirTablero(Int32.Parse(boardComboBox.Text));
+            EnviarTablero(Int32.Parse(boardComboBox.Text));
+            boardComboBox.Visible = false;
+            boardLabel.Visible = false;
+            this.Dado.Enabled = true;
         }
     }
 }

@@ -13,6 +13,8 @@
   - [Setup](#setup)
   - [Getting Started](#getting-started)
   - [Usage](#usage)
+    - [Usage In Testing](#usage-in-testing)
+    - [Usage In Production](#usage-in-production)
 
 ## About The Project
 
@@ -79,4 +81,17 @@ https://github.com/metalsonic21/N1-SnakesLadders.git
 2. Locate the `.exe` file in `/bin/Debug`
 
 <!-- USAGE EXAMPLES -->
-## Usage
+### Usage
+
+## Usage In Testing
+1. Download [Virtual Serial Port Driver](https://www.virtual-serial-port.org/downloads.html)
+2. Create 2 virtual ports (COM1 and COM2)
+3. Execute this application. It will open 2 windows, click on "Buscar Puertos", then in the dropdown select COM1 for player 1 and COM2 for player 2
+4. You can play!
+
+
+## Usage In Production
+1. Connect 4 computers like the token ring topology (this connection won't work exactly as a token ring topology but the physical connection is the same)
+2. Download and install [Hyperterminal](https://www.tecnozero.com/hyperterminal.zip) to test out the communication between the 4 computers
+3. Once you've made sure that each computer receives and sends info to their peer you can close hyperterminal and execute this application, make sure that each computer picks a different player since the application doesn't validate stuff like "player 1 already exists". Make sure you close hyperterminal before initializing the app because otherwise it will throw the error of "Access to COM1 denied"
+4. You can play!

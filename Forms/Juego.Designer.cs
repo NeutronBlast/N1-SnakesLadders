@@ -52,6 +52,8 @@
             this.Dado = new Guna.UI.WinForms.GunaAdvenceButton();
             this.dice_Pic = new Guna.UI.WinForms.GunaPictureBox();
             this.Tablero = new Guna.UI.WinForms.GunaPictureBox();
+            this.boardLabel = new Guna.UI.WinForms.GunaLabel();
+            this.boardComboBox = new Guna.UI.WinForms.GunaComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).BeginInit();
@@ -290,6 +292,7 @@
             this.Dado.CheckedImage = ((System.Drawing.Image)(resources.GetObject("Dado.CheckedImage")));
             this.Dado.CheckedLineColor = System.Drawing.Color.DimGray;
             this.Dado.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Dado.Enabled = false;
             this.Dado.FocusedColor = System.Drawing.Color.Empty;
             this.Dado.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Dado.ForeColor = System.Drawing.Color.White;
@@ -333,6 +336,38 @@
             this.Tablero.TabIndex = 20;
             this.Tablero.TabStop = false;
             // 
+            // boardLabel
+            // 
+            this.boardLabel.AutoSize = true;
+            this.boardLabel.BackColor = System.Drawing.Color.Transparent;
+            this.boardLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.boardLabel.Location = new System.Drawing.Point(27, 610);
+            this.boardLabel.Name = "boardLabel";
+            this.boardLabel.Size = new System.Drawing.Size(136, 20);
+            this.boardLabel.TabIndex = 21;
+            this.boardLabel.Text = "Seleccione Tablero:";
+            this.boardLabel.Visible = false;
+            // 
+            // boardComboBox
+            // 
+            this.boardComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.boardComboBox.BaseColor = System.Drawing.Color.White;
+            this.boardComboBox.BorderColor = System.Drawing.Color.Silver;
+            this.boardComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.boardComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.boardComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.boardComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.boardComboBox.ForeColor = System.Drawing.Color.Black;
+            this.boardComboBox.FormattingEnabled = true;
+            this.boardComboBox.Location = new System.Drawing.Point(169, 605);
+            this.boardComboBox.Name = "boardComboBox";
+            this.boardComboBox.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.boardComboBox.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.boardComboBox.Size = new System.Drawing.Size(157, 31);
+            this.boardComboBox.TabIndex = 22;
+            this.boardComboBox.Visible = false;
+            this.boardComboBox.SelectedIndexChanged += new System.EventHandler(this.boardComboBox_SelectedIndexChanged);
+            // 
             // Juego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -340,6 +375,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1303, 688);
+            this.Controls.Add(this.boardComboBox);
+            this.Controls.Add(this.boardLabel);
             this.Controls.Add(this.Tablero);
             this.Controls.Add(this.dice_Pic);
             this.Controls.Add(this.Dado);
@@ -400,5 +437,7 @@
         private Guna.UI.WinForms.GunaAdvenceButton Dado;
         private Guna.UI.WinForms.GunaPictureBox dice_Pic;
         private Guna.UI.WinForms.GunaPictureBox Tablero;
+        private Guna.UI.WinForms.GunaComboBox boardComboBox;
+        private Guna.UI.WinForms.GunaLabel boardLabel;
     }
 }

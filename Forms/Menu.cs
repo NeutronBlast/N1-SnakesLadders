@@ -93,7 +93,6 @@ namespace Escalera
         private void ListaPorts_SelectedIndexChanged(object sender, EventArgs e)
         {
             bJugar.Enabled = true;
-            bObservar.Enabled = true;
             puerto = ListaPorts.Text;
         }
 
@@ -125,7 +124,6 @@ namespace Escalera
             bJugador2.Enabled = false;
             bJugador3.Enabled = false;
             bJugador4.Enabled = false;
-            bObservar.Enabled = false;
             difficulty_label.Visible = true;
 
             DificultadList.Items.Clear();

@@ -38,7 +38,6 @@
             this.bConnect = new Guna.UI.WinForms.GunaAdvenceButton();
             this.ListaPorts = new Guna.UI.WinForms.GunaComboBox();
             this.bJugar = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.bObservar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.bJugador1 = new Guna.UI.WinForms.GunaCircleButton();
             this.bJugador2 = new Guna.UI.WinForms.GunaCircleButton();
             this.bJugador3 = new Guna.UI.WinForms.GunaCircleButton();
@@ -195,40 +194,6 @@
             this.bJugar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.bJugar.Click += new System.EventHandler(this.bJugar_Click_1);
             // 
-            // bObservar
-            // 
-            this.bObservar.AnimationHoverSpeed = 0.07F;
-            this.bObservar.AnimationSpeed = 0.03F;
-            this.bObservar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(160)))), ((int)(((byte)(166)))));
-            this.bObservar.BorderColor = System.Drawing.Color.Black;
-            this.bObservar.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.bObservar.CheckedBorderColor = System.Drawing.Color.Black;
-            this.bObservar.CheckedForeColor = System.Drawing.Color.White;
-            this.bObservar.CheckedImage = ((System.Drawing.Image)(resources.GetObject("bObservar.CheckedImage")));
-            this.bObservar.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.bObservar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bObservar.Enabled = false;
-            this.bObservar.FocusedColor = System.Drawing.Color.Empty;
-            this.bObservar.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.bObservar.ForeColor = System.Drawing.Color.White;
-            this.bObservar.Image = ((System.Drawing.Image)(resources.GetObject("bObservar.Image")));
-            this.bObservar.ImageSize = new System.Drawing.Size(20, 20);
-            this.bObservar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.bObservar.Location = new System.Drawing.Point(821, 323);
-            this.bObservar.Name = "bObservar";
-            this.bObservar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(131)))), ((int)(((byte)(135)))));
-            this.bObservar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.bObservar.OnHoverForeColor = System.Drawing.Color.White;
-            this.bObservar.OnHoverImage = null;
-            this.bObservar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.bObservar.OnPressedColor = System.Drawing.Color.Black;
-            this.bObservar.Size = new System.Drawing.Size(295, 70);
-            this.bObservar.TabIndex = 16;
-            this.bObservar.Text = "Iniciar como Espectador";
-            this.bObservar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bObservar.Visible = false;
-            this.bObservar.Click += new System.EventHandler(this.bObservar_Click_1);
-            // 
             // bJugador1
             // 
             this.bJugador1.AnimationHoverSpeed = 0.07F;
@@ -242,7 +207,7 @@
             this.bJugador1.ForeColor = System.Drawing.Color.White;
             this.bJugador1.Image = null;
             this.bJugador1.ImageSize = new System.Drawing.Size(52, 52);
-            this.bJugador1.Location = new System.Drawing.Point(823, 430);
+            this.bJugador1.Location = new System.Drawing.Point(823, 347);
             this.bJugador1.Name = "bJugador1";
             this.bJugador1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(131)))), ((int)(((byte)(135)))));
             this.bJugador1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -268,7 +233,7 @@
             this.bJugador2.ForeColor = System.Drawing.Color.White;
             this.bJugador2.Image = null;
             this.bJugador2.ImageSize = new System.Drawing.Size(52, 52);
-            this.bJugador2.Location = new System.Drawing.Point(894, 430);
+            this.bJugador2.Location = new System.Drawing.Point(894, 347);
             this.bJugador2.Name = "bJugador2";
             this.bJugador2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(131)))), ((int)(((byte)(135)))));
             this.bJugador2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -294,7 +259,7 @@
             this.bJugador3.ForeColor = System.Drawing.Color.White;
             this.bJugador3.Image = null;
             this.bJugador3.ImageSize = new System.Drawing.Size(52, 52);
-            this.bJugador3.Location = new System.Drawing.Point(965, 430);
+            this.bJugador3.Location = new System.Drawing.Point(965, 347);
             this.bJugador3.Name = "bJugador3";
             this.bJugador3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(131)))), ((int)(((byte)(135)))));
             this.bJugador3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -320,7 +285,7 @@
             this.bJugador4.ForeColor = System.Drawing.Color.White;
             this.bJugador4.Image = null;
             this.bJugador4.ImageSize = new System.Drawing.Size(52, 52);
-            this.bJugador4.Location = new System.Drawing.Point(1036, 430);
+            this.bJugador4.Location = new System.Drawing.Point(1036, 347);
             this.bJugador4.Name = "bJugador4";
             this.bJugador4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(131)))), ((int)(((byte)(135)))));
             this.bJugador4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -344,7 +309,7 @@
             this.DificultadList.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DificultadList.ForeColor = System.Drawing.Color.Black;
             this.DificultadList.FormattingEnabled = true;
-            this.DificultadList.Location = new System.Drawing.Point(821, 518);
+            this.DificultadList.Location = new System.Drawing.Point(821, 435);
             this.DificultadList.Name = "DificultadList";
             this.DificultadList.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(131)))), ((int)(((byte)(135)))));
             this.DificultadList.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -358,7 +323,7 @@
             this.select_player_label.AutoSize = true;
             this.select_player_label.BackColor = System.Drawing.Color.Transparent;
             this.select_player_label.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.select_player_label.Location = new System.Drawing.Point(817, 405);
+            this.select_player_label.Location = new System.Drawing.Point(817, 322);
             this.select_player_label.Name = "select_player_label";
             this.select_player_label.Size = new System.Drawing.Size(136, 20);
             this.select_player_label.TabIndex = 22;
@@ -370,7 +335,7 @@
             this.difficulty_label.AutoSize = true;
             this.difficulty_label.BackColor = System.Drawing.Color.Transparent;
             this.difficulty_label.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.difficulty_label.Location = new System.Drawing.Point(819, 495);
+            this.difficulty_label.Location = new System.Drawing.Point(819, 412);
             this.difficulty_label.Name = "difficulty_label";
             this.difficulty_label.Size = new System.Drawing.Size(112, 20);
             this.difficulty_label.TabIndex = 23;
@@ -407,7 +372,6 @@
             this.Controls.Add(this.bJugador3);
             this.Controls.Add(this.bJugador2);
             this.Controls.Add(this.bJugador1);
-            this.Controls.Add(this.bObservar);
             this.Controls.Add(this.bJugar);
             this.Controls.Add(this.ListaPorts);
             this.Controls.Add(this.bConnect);
@@ -437,7 +401,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton bConnect;
         private Guna.UI.WinForms.GunaComboBox ListaPorts;
         private Guna.UI.WinForms.GunaAdvenceButton bJugar;
-        private Guna.UI.WinForms.GunaAdvenceButton bObservar;
         private Guna.UI.WinForms.GunaCircleButton bJugador1;
         private Guna.UI.WinForms.GunaCircleButton bJugador2;
         private Guna.UI.WinForms.GunaCircleButton bJugador3;
