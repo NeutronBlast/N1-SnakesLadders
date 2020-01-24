@@ -49,12 +49,12 @@
 |    6    |  17, 41, 81     |
 
 ## Boards
-[Board 1](./Assets/Game/board_1.jpg)
-[Board 2](./Assets/Game/board_2.jpg)
-[Board 3](./Assets/Game/board_3.jpg)
-[Board 4](./Assets/Game/board_4.jpg)
-[Board 5](./Assets/Game/board_5.jpg)
-[Board 6](./Assets/Game/board_6.jpg)
+![Board 1](./Assets/Game/board_1.jpg)
+![Board 2](./Assets/Game/board_2.jpg)
+![Board 3](./Assets/Game/board_3.jpg)
+![Board 4](./Assets/Game/board_4.jpg)
+![Board 5](./Assets/Game/board_5.jpg)
+![Board 6](./Assets/Game/board_6.jpg)
 
 ### Built With
 
