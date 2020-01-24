@@ -505,7 +505,6 @@ namespace Escalera.Forms
                 }
 
             }
-
         }
 
         private void boardComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -515,6 +514,11 @@ namespace Escalera.Forms
             boardComboBox.Visible = false;
             boardLabel.Visible = false;
             this.Dado.Enabled = true;
+        }
+
+        private void dice_Pic_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

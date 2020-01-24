@@ -323,6 +323,7 @@
             this.dice_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.dice_Pic.TabIndex = 19;
             this.dice_Pic.TabStop = false;
+            this.dice_Pic.Click += new System.EventHandler(this.dice_Pic_Click);
             // 
             // Tablero
             // 

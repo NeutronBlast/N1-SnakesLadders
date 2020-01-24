@@ -12,9 +12,8 @@
   - [Built With](#built-with)
   - [Setup](#setup)
   - [Getting Started](#getting-started)
-  - [Usage](#usage)
-    - [Usage In Testing](#usage-in-testing)
-    - [Usage In Production](#usage-in-production)
+  - [Usage In Testing](#usage-in-testing)
+  - [Usage In Production](#usage-in-production)
 
 ## About The Project
 
@@ -81,8 +80,6 @@ https://github.com/metalsonic21/N1-SnakesLadders.git
 2. Locate the `.exe` file in `/bin/Debug`
 
 <!-- USAGE EXAMPLES -->
-### Usage
-
 ## Usage In Testing
 1. Download [Virtual Serial Port Driver](https://www.virtual-serial-port.org/downloads.html)
 2. Create 2 virtual ports (COM1 and COM2)
